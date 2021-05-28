@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DWEC Tarea04 Diego Pandal</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js">
+  </script>
+  </head>
+  <body onload="inicio()"></body> <!--llamada al procedimiento que mostrara los datos-->
+
+    <form method="GET" action="index.html" onsubmit="enviarDatos()">
+
+        <h1>Tarea 04 DWEC</h1></br>
+        <tr>
+        <div id="cajanombre">
+        <td>Nombre:<input type="text" id="nombre" onblur="validarNombre()"></td></br>
+        </div> 
+        <div id="respuestaNombre"><!--lugar donde aparecera el mensaje en funcion de la validez del nombre-->
+        </div>
+        <div id="checkbox">
+            <div id="adulto">
+              <td>Mayor de 16 años <input type="checkbox"  id="mayor16" onclick="adulto()"></td></br>
+            </div>
+            <div id="nino">
+              <td>Menor de 16 años <input type="checkbox"  id="menor16"  onclick="adulto()"> </td></br>
+            </div>
+            <div id="mayorEdad">
+            </div></br>
+       </div>
+       <div id="dni">
+            <td>DNI:  <input type="text" id="numDni" onblur="validarDni()"></td></br></br>
+            <div id="mensajeDni">
+            </div>
+      </div>
+
+      <div id="boton">     
+        <td> <input type="submit" id="enviar" value=Enviar></td></br>
+      </div>
+        </tr>
+      
+    </form>
+
+
+		
+
+  </body>
+</html>
